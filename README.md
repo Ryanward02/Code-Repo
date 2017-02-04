@@ -1,3 +1,3 @@
-This is a very easy way of displaying information to you all
+This is a repo designed to allow people to download projects of mine from cydia.
 
-This repo will be designed for me to use primarily, but anyone is free to check out my code.
+I am hoping to begin developing jailbreak tweaks soon.

@@ -1,13 +1,21 @@
 import os
 import time
 import math
-
+from sys import platform
 class bcolors:
     RED = '\033[31m'
     UNDERLINE = '\033[4m'
     ENDC = '\033[0m'
 def loop():
-    os.system("clear")
+    if platform == "linux":
+        os.system("clear")
+
+    if platform == "win32":
+        os.system("CLS")
+
+    if platform == "darwin":
+        os.system("clear")
+
     calcType = int(input('What calculation would you like to do?\n1:\tAddition\t(+)\n2:\tSubtraction\t(-)\n3:\tMultiplication\t(x)\n4:\tDivision\t(/)\n5:\tSqaure Root\t(sqrt)\n6:\tSqaured\t\t(sqr)\n7:\tCubed\t\t(cbd)\n8:\tSin()\n9:\tCos()\n10:\tTan()\n\n\nPLEASE ENTER SELECTION: '))
 
     if calcType <= 4:
